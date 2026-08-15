@@ -1,3 +1,4 @@
+<img width="2494" height="1514" alt="90b6ef5f3a7108cd7146b37b34cf88f3" src="https://github.com/user-attachments/assets/3f82b9b3-6877-440b-afe1-a07f7136f852" />
 # @3930a/dsh-stock-watch
 
 A股盯盘行情带插件 for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)。
@@ -7,7 +8,7 @@ A股盯盘行情带插件 for [DeepSeek Harness](https://github.com/deepseek-ai/
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![topic](https://img.shields.io/badge/topic-deepseekharness-6e40c9)](https://github.com/topics/deepseekharness)
 [![platform](https://img.shields.io/badge/platform-DeepSeek%20Harness%20(Web)-ff8c00)](#)
-
+<img width="2494" height="1514" alt="90b6ef5f3a7108cd7146b37b34cf88f3" src="https://github.com/user-attachments/assets/f2fb9d3a-1513-43bd-88d3-19c2a1cc360c" />
 ## 特性
 
 - 📊 常驻行情带：渲染在输入框下方随读带（`conversation.composer.dock` 插槽）
