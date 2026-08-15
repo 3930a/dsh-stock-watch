@@ -1,4 +1,3 @@
-<img width="2494" height="1514" alt="90b6ef5f3a7108cd7146b37b34cf88f3" src="https://github.com/user-attachments/assets/3f82b9b3-6877-440b-afe1-a07f7136f852" />
 # @3930a/dsh-stock-watch
 
 A股盯盘行情带插件 for [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness)。
