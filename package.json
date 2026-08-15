@@ -1,0 +1,51 @@
+{
+  "name": "@3930a/dsh-stock-watch",
+  "version": "1.0.0",
+  "description": "A股盯盘行情带插件 for DeepSeek Harness：常驻页面行情条（3秒刷新、涨红跌绿、自选股增删）+ /stock/* 数据路由，自选股与本地 watchlist.json 双向同步",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js"
+  ],
+  "keywords": [
+    "deepseek",
+    "deepseekharness",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "stock",
+    "a-share",
+    "watchlist",
+    "quote"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.0.0"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-theme"
+      ]
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/3930a/dsh-stock-watch.git"
+  }
+}
