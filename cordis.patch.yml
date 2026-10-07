@@ -1,0 +1,6 @@
+# dsh-stock-watch：A股盯盘行情带（常驻页面行情条 + /stock/* 数据路由）
+# 复用 README 的接入方式；watchlistPath / refreshMs 可按需在 config 中覆盖。
+- insert:
+    - id: stock-strip
+      name: '@3930a/dsh-stock-watch'
+      inject: [webServer]

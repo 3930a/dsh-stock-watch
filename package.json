@@ -1,7 +1,7 @@
 {
   "name": "@3930a/dsh-stock-watch",
-  "version": "1.0.0",
-  "description": "A股盯盘行情带插件 for DeepSeek Harness：常驻页面行情条（3秒刷新、涨红跌绿、自选股增删）+ /stock/* 数据路由，自选股与本地 watchlist.json 双向同步",
+  "version": "2.0.0",
+  "description": "A股盯盘行情带插件 for DeepSeek Harness：常驻页面行情条（悬停浮出、横向滚动、3秒刷新、涨红跌绿、自选股增删）+ /stock/* 数据路由，自选股与本地 watchlist.json 双向同步（node:fs 直写，不受工作区沙箱限制）",
   "type": "module",
   "main": "lib/index.js",
   "exports": {
@@ -15,7 +15,10 @@
   },
   "files": [
     "lib/index.js",
-    "lib/client.js"
+    "lib/client.js",
+    "cordis.patch.yml",
+    "dsh.plugin.json",
+    "CHANGELOG.md"
   ],
   "keywords": [
     "deepseek",
@@ -36,16 +39,22 @@
     "@deepseek-ai/cordis": ">=4.0.0"
   },
   "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
     "client": {
       "platform": "web",
       "inject": [
-        "@deepseek-ai/dsh-client-runtime",
-        "@deepseek-ai/dsh-client-ui-theme"
+        "@deepseek-ai/dsh-client-ui-conversation"
       ]
     }
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/3930a/dsh-stock-watch.git"
+  },
+  "homepage": "https://github.com/3930a/dsh-stock-watch#readme",
+  "bugs": {
+    "url": "https://github.com/3930a/dsh-stock-watch/issues"
   }
 }

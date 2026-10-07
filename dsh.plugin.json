@@ -1,0 +1,14 @@
+{
+  "name": "dsh-stock-watch",
+  "description": "A股盯盘行情带插件：常驻页面行情条（悬停浮出滚动指示条与＋、横向滚动、3秒刷新、涨红跌绿、自选股增删）+ /stock/* 数据路由，自选股与本地 watchlist.json 双向同步（node:fs 直写）",
+  "version": "2.0.0",
+  "entry": {
+    "name": "stock-strip",
+    "inject": [
+      "webServer"
+    ]
+  },
+  "client": {
+    "platform": "web"
+  }
+}
